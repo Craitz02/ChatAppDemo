@@ -10,5 +10,15 @@ package ni.edu.uni.cliente;
  * @author Rodrigo
  */
 public class Chat {
+    public static Conector cliente;
+    public static void main(String[] args) {
+        VCliente vcliente = new VCliente();
+        vcliente.setVisible(true);
+    }
     
+    public static void initCliente(String ip){
+        cliente = new Conector(ip);
+        cliente.start();
+                
+    }
 }
