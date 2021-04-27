@@ -42,7 +42,7 @@ public class VServidor extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 204, 255));
 
-        btnChat.setBackground(new java.awt.Color(255, 255, 255));
+        btnChat.setBackground(new java.awt.Color(255, 204, 204));
         btnChat.setForeground(new java.awt.Color(0, 0, 0));
         btnChat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/speak (1).png"))); // NOI18N
         btnChat.setText("Start Chat");
@@ -52,7 +52,7 @@ public class VServidor extends javax.swing.JFrame {
             }
         });
 
-        btnSend.setBackground(new java.awt.Color(255, 255, 255));
+        btnSend.setBackground(new java.awt.Color(255, 204, 204));
         btnSend.setForeground(new java.awt.Color(0, 0, 0));
         btnSend.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Send.png"))); // NOI18N
         btnSend.setText("Enviar");
@@ -63,9 +63,12 @@ public class VServidor extends javax.swing.JFrame {
         });
 
         txtaChat.setEditable(false);
+        txtaChat.setBackground(new java.awt.Color(153, 153, 255));
         txtaChat.setColumns(20);
         txtaChat.setRows(5);
         jScrollPane1.setViewportView(txtaChat);
+
+        txtChat.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Ingrese Nombre de Usuario:");
