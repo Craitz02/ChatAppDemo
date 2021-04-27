@@ -16,8 +16,8 @@ public class Chat {
         vcliente.setVisible(true);
     }
     
-    public static void initCliente(String ip){
-        cliente = new Conector(ip);
+    public static void initCliente(String name, String ip, int puerto){
+        cliente = new Conector(name,ip,puerto);
         cliente.start();
                 
     }

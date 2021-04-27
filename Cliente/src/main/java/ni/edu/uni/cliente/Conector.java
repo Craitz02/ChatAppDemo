@@ -24,12 +24,14 @@ public class Conector extends Thread {
     private InputStreamReader entradaSocket;
     private DataOutputStream salida;
     private BufferedReader entrada;
-    final int puerto = 1234;
+    //final int puerto = 1234;
 
-    public Conector(String ip) {
+    public Conector(String name,String ip,int puerto) {
+        
+        
         try {
             
-            s = new Socket(ip, this.puerto);
+            s = new Socket(ip,puerto);
             
             //creacion de entrada de datos para lectura de msg
             entradaSocket = new InputStreamReader(s.getInputStream());
@@ -37,7 +39,7 @@ public class Conector extends Thread {
             
             //creacion de salida de datos para el envio de msg
             salida = new DataOutputStream((s.getOutputStream()));
-            salida.writeUTF("-Conectado- \n");
+            salida.writeUTF("** "+name+" se ha Conectado ** \n");
             
         } catch (IOException ex) {
             Logger.getLogger(Conector.class.getName()).log(Level.SEVERE, null, ex);

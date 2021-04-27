@@ -16,8 +16,8 @@ public class Chat {
         vserver.setVisible(true);
     }
 
-    public static void initServer() {
-        server = new Conector("Hilos");
+    public static void initServer(int port) {
+        server = new Conector(port);
         server.start();
     }
     
