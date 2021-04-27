@@ -45,6 +45,7 @@ public class VCliente extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 204, 204));
 
         txtaChat.setEditable(false);
+        txtaChat.setBackground(new java.awt.Color(255, 204, 204));
         txtaChat.setColumns(20);
         txtaChat.setRows(5);
         jScrollPane1.setViewportView(txtaChat);
@@ -54,7 +55,9 @@ public class VCliente extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ip.png"))); // NOI18N
         jLabel1.setText("Introduzca el IP:");
 
-        btnSend.setBackground(new java.awt.Color(255, 255, 255));
+        txtChat.setBackground(new java.awt.Color(153, 153, 255));
+
+        btnSend.setBackground(new java.awt.Color(153, 153, 255));
         btnSend.setForeground(new java.awt.Color(0, 0, 0));
         btnSend.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Send.png"))); // NOI18N
         btnSend.setText("Enviar");
@@ -64,7 +67,7 @@ public class VCliente extends javax.swing.JFrame {
             }
         });
 
-        btnConect.setBackground(new java.awt.Color(255, 255, 255));
+        btnConect.setBackground(new java.awt.Color(153, 153, 255));
         btnConect.setForeground(new java.awt.Color(0, 0, 0));
         btnConect.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Enlazar.png"))); // NOI18N
         btnConect.setText("Conectar");
